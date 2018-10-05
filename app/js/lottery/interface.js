@@ -2,7 +2,7 @@ import $ from 'jquery';
 
 class Interface {
 	// 获取遗漏
-	get Omit(issue) {
+	getOmit(issue) {
 		let self = this;
 		return new Promise((resolv, reject) => {
 			$.ajax({

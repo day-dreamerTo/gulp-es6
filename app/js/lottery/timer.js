@@ -21,13 +21,13 @@ class Timer{
 			}
 			// 主要是为了保持数据格式的完整，防止出现 n天n分n秒的情况
 			if(r.length || h>0) {
-				r.push(`<em>${h}</em>时`)；
+				r.push(`<em>${h}</em>时`);
 			}
 			if(r.length || m>0) {
-				r.push(r.push(`<em>${m}</em>分`);
+				r.push(`<em>${m}</em>分`);
 			}    
 			if(r.length || s>0) {
-				r.push(`<em>${s}</em>秒`)；
+				r.push(`<em>${s}</em>秒`);
 			}
 			self.last_time = r.join('');
 			update.call(self, r.join(''));
